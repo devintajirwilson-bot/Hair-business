@@ -1,0 +1,91 @@
+body {
+  margin: 0;
+  font-family: Georgia, serif;
+  background: #041a14;
+  color: #f5f0e6;
+}
+
+/* HERO SECTION (your logo style area) */
+.hero {
+  text-align: center;
+  padding: 80px 20px;
+  background: radial-gradient(circle at top, #0b2e25, #041a14);
+}
+
+.logo {
+  width: 180px;
+  border-radius: 50%;
+  box-shadow: 0 0 25px gold;
+  margin-bottom: 20px;
+}
+
+h1 {
+  font-size: 45px;
+  color: gold;
+  letter-spacing: 2px;
+}
+
+p {
+  opacity: 0.8;
+}
+
+/* BUTTON */
+.btn {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 12px 25px;
+  background: gold;
+  color: black;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 30px;
+}
+
+/* SECTIONS */
+section {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+h2 {
+  color: gold;
+}
+
+/* GRID CARDS */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.card {
+  background: rgba(255, 255, 255, 0.05);
+  padding: 20px;
+  border-radius: 12px;
+  border: 1px solid rgba(255, 215, 0, 0.2);
+}
+
+/* FORM */
+form {
+  max-width: 350px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+input, select {
+  padding: 12px;
+  border-radius: 8px;
+  border: none;
+}
+
+button {
+  padding: 12px;
+  background: gold;
+  border: none;
+  border-radius: 30px;
+  font-weight: bold;
+  cursor: pointer;
+}

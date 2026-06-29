@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Klairilia VISION | Hair Studio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <h1>Klairilia VISION</h1>
+    <p>Luxury Hair • Braids • Locs • Styling</p>
+    <a href="#book" class="btn">Book Appointment</a>
+  </header>
+
+  <nav>
+    <a href="#services">Services</a>
+    <a href="#gallery">Gallery</a>
+    <a href="#book">Book</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <section id="services">
+    <h2>Services</h2>
+    <div class="grid">
+      <div class="card">Haircuts - $35+</div>
+      <div class="card">Braids - $120+</div>
+      <div class="card">Loc Retwist - $85+</div>
+      <div class="card">Hair Coloring - $150+</div>
+      <div class="card">Silk Press - $70+</div>
+      <div class="card">Installations - $200+</div>
+    </div>
+  </section>
+
+  <section id="gallery">
+    <h2>Our Work</h2>
+    <div class="grid">
+      <div class="img-box">Style 1</div>
+      <div class="img-box">Style 2</div>
+      <div class="img-box">Style 3</div>
+      <div class="img-box">Style 4</div>
+    </div>
+  </section>
+
+  <section id="book">
+    <h2>Book an Appointment</h2>
+    <form id="bookingForm">
+      <input type="text" placeholder="Full Name" required>
+      <input type="tel" placeholder="Phone Number" required>
+      <select required>
+        <option value="">Select Service</option>
+        <option>Haircut</option>
+        <option>Braids</option>
+        <option>Loc Retwist</option>
+        <option>Coloring</option>
+        <option>Silk Press</option>
+      </select>
+      <input type="date" required>
+      <input type="time" required>
+      <button type="submit">Submit Booking</button>
+    </form>
+    <p id="msg"></p>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>📍 Chicago, IL</p>
+    <p>📞 (000) 000-0000</p>
+    <p>📸 @KlairiliaVISION</p>
+  </section>
+
+  <footer>
+    <p>© 2026 Klairilia VISION. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
