@@ -1,79 +1,232 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Klairilia VISION | Hair Studio</title>
-  <link rel="stylesheet" href="style.css">
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Klairilia VISION</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="style.css">
+
 </head>
+
 <body>
 
-  <header>
-    <h1>Klairilia VISION</h1>
-    <p>Luxury Hair • Braids • Locs • Styling</p>
-    <a href="#book" class="btn">Book Appointment</a>
-  </header>
+<nav>
 
-  <nav>
-    <a href="#services">Services</a>
-    <a href="#gallery">Gallery</a>
-    <a href="#book">Book</a>
-    <a href="#contact">Contact</a>
-  </nav>
+<div class="logo">
 
-  <section id="services">
-    <h2>Services</h2>
-    <div class="grid">
-      <div class="card">Haircuts - $35+</div>
-      <div class="card">Braids - $120+</div>
-      <div class="card">Loc Retwist - $85+</div>
-      <div class="card">Hair Coloring - $150+</div>
-      <div class="card">Silk Press - $70+</div>
-      <div class="card">Installations - $200+</div>
-    </div>
-  </section>
+Klairilia <span>VISION</span>
 
-  <section id="gallery">
-    <h2>Our Work</h2>
-    <div class="grid">
-      <div class="img-box">Style 1</div>
-      <div class="img-box">Style 2</div>
-      <div class="img-box">Style 3</div>
-      <div class="img-box">Style 4</div>
-    </div>
-  </section>
+</div>
 
-  <section id="book">
-    <h2>Book an Appointment</h2>
-    <form id="bookingForm">
-      <input type="text" placeholder="Full Name" required>
-      <input type="tel" placeholder="Phone Number" required>
-      <select required>
-        <option value="">Select Service</option>
-        <option>Haircut</option>
-        <option>Braids</option>
-        <option>Loc Retwist</option>
-        <option>Coloring</option>
-        <option>Silk Press</option>
-      </select>
-      <input type="date" required>
-      <input type="time" required>
-      <button type="submit">Submit Booking</button>
-    </form>
-    <p id="msg"></p>
-  </section>
+<ul>
 
-  <section id="contact">
-    <h2>Contact</h2>
-    <p>📍 Chicago, IL</p>
-    <p>📞 (000) 000-0000</p>
-    <p>📸 @KlairiliaVISION</p>
-  </section>
+<li><a href="#">Home</a></li>
+<li><a href="#services">Services</a></li>
+<li><a href="#gallery">Gallery</a></li>
+<li><a href="#booking">Book</a></li>
+<li><a href="#contact">Contact</a></li>
 
-  <footer>
-    <p>© 2026 Klairilia VISION. All rights reserved.</p>
-  </footer>
+</ul>
 
-  <script src="script.js"></script>
+<div class="language">
+
+<button>🇺🇸</button>
+
+<button>🇫🇷</button>
+
+</div>
+
+</nav>
+
+<header>
+
+<div class="overlay"></div>
+
+<div class="hero">
+
+<h1>Luxury Hair Starts Here</h1>
+
+<p>
+
+Luxury Braids • Locs • Silk Press • Color
+
+</p>
+
+<a href="#booking">
+
+Book Appointment
+
+</a>
+
+</div>
+
+</header>
+
+<section class="about">
+
+<h2>
+
+Luxury Beauty Experience
+
+</h2>
+
+<p>
+
+At Klairilia VISION we believe your hair should be a reflection of confidence, elegance, and individuality. Every appointment is tailored to provide a relaxing experience and beautiful results.
+
+</p>
+
+</section>
+
+<section id="services">
+
+<h2>
+
+Featured Services
+
+</h2>
+
+<div class="cards">
+
+<div class="card">
+
+<h3>Braids</h3>
+
+<p>Protective styles for every occasion.</p>
+
+<h4>$120+</h4>
+
+</div>
+
+<div class="card">
+
+<h3>Silk Press</h3>
+
+<p>Healthy shine and smooth finish.</p>
+
+<h4>$70+</h4>
+
+</div>
+
+<div class="card">
+
+<h3>Loc Retwist</h3>
+
+<p>Clean maintenance with premium care.</p>
+
+<h4>$85+</h4>
+
+</div>
+
+</div>
+
+</section>
+
+<section id="gallery">
+
+<h2>Gallery</h2>
+
+<div class="gallery">
+
+<div></div>
+<div></div>
+<div></div>
+<div></div>
+<div></div>
+<div></div>
+
+</div>
+
+</section>
+
+<section id="booking">
+
+<h2>
+
+Book Your Appointment
+
+</h2>
+
+<form>
+
+<input type="text" placeholder="Full Name">
+
+<input type="email" placeholder="Email">
+
+<input type="tel" placeholder="Phone Number">
+
+<select>
+
+<option>Select Service</option>
+
+<option>Braids</option>
+
+<option>Silk Press</option>
+
+<option>Loc Retwist</option>
+
+<option>Color</option>
+
+</select>
+
+<input type="date">
+
+<input type="time">
+
+<button>
+
+Book Now
+
+</button>
+
+</form>
+
+</section>
+
+<section id="contact">
+
+<h2>
+
+Contact
+
+</h2>
+
+<p>
+
+📍 Chicago, Illinois
+
+</p>
+
+<p>
+
+📞 (000)000-0000
+
+</p>
+
+<p>
+
+Instagram: @KlairiliaVISION
+
+</p>
+
+</section>
+
+<footer>
+
+© 2026 Klairilia VISION
+
+</footer>
+
+<script src="script.js"></script>
+
 </body>
+
 </html>
