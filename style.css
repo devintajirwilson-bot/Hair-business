@@ -1,7 +1,8 @@
-/* ==========================
-   Klairilia VISION
-   Luxury Salon Theme
-========================== */
+/* ============================
+   KLAIRILIA VISION
+   Luxury Hair Website
+============================ */
+
 
 *{
     margin:0;
@@ -9,463 +10,509 @@
     box-sizing:border-box;
 }
 
+
 html{
     scroll-behavior:smooth;
 }
 
+
 body{
 
-    background:#041813;
+    background:#041b15;
+
     color:white;
-    font-family:'Poppins',sans-serif;
+
+    font-family:'Poppins', sans-serif;
+
     overflow-x:hidden;
 
 }
 
-/* Background */
-
-body::before{
-
-content:"";
-
-position:fixed;
-
-width:100%;
-height:100%;
-
-background:
-linear-gradient(rgba(0,0,0,.72),rgba(0,0,0,.72)),
-url("https://images.unsplash.com/photo-1522337660859-02fbefca4702?auto=format&fit=crop&w=1600&q=80");
-
-background-size:cover;
-background-position:center;
-
-z-index:-5;
-
-}
 
 /* NAVIGATION */
 
 nav{
 
-position:fixed;
+    position:fixed;
 
-top:0;
-left:0;
+    top:0;
 
-width:100%;
+    width:100%;
 
-padding:20px 8%;
+    padding:20px 8%;
 
-display:flex;
+    display:flex;
 
-justify-content:space-between;
+    justify-content:space-between;
 
-align-items:center;
+    align-items:center;
 
-background:rgba(0,0,0,.45);
+    background:rgba(0,0,0,.55);
 
-backdrop-filter:blur(18px);
+    backdrop-filter:blur(15px);
 
-z-index:1000;
+    z-index:1000;
 
 }
+
 
 .logo{
 
-font-size:32px;
+    font-family:'Playfair Display',serif;
 
-font-family:"Playfair Display",serif;
+    font-size:32px;
 
-color:white;
+    color:white;
 
 }
+
 
 .logo span{
 
-color:#d4af37;
+    color:#d4af37;
 
 }
+
+
 
 nav ul{
 
-display:flex;
+    display:flex;
 
-list-style:none;
+    gap:35px;
 
-gap:40px;
-
-}
-
-nav a{
-
-text-decoration:none;
-
-color:white;
-
-font-weight:500;
-
-transition:.35s;
+    list-style:none;
 
 }
 
-nav a:hover{
 
-color:#d4af37;
+nav ul a{
+
+    color:white;
+
+    text-decoration:none;
+
+    font-weight:500;
+
+    transition:.3s;
 
 }
+
+
+nav ul a:hover{
+
+    color:#d4af37;
+
+}
+
+
+
+/* LANGUAGE BUTTONS */
+
 
 .language button{
 
-background:none;
+    background:transparent;
 
-border:1px solid gold;
+    color:white;
 
-padding:8px 14px;
+    border:1px solid #d4af37;
 
-color:white;
+    padding:10px 15px;
 
-cursor:pointer;
+    border-radius:30px;
 
-border-radius:30px;
+    cursor:pointer;
 
-margin-left:10px;
+    margin-left:8px;
 
-transition:.3s;
+    transition:.3s;
 
 }
+
 
 .language button:hover{
 
-background:gold;
+    background:#d4af37;
 
-color:black;
+    color:black;
 
 }
+
+
 
 /* HERO */
 
-header{
-
-height:100vh;
-
-display:flex;
-
-justify-content:center;
-
-align-items:center;
-
-text-align:center;
-
-position:relative;
-
-}
-
-.overlay{
-
-position:absolute;
-
-width:100%;
-height:100%;
-
-background:linear-gradient(to bottom,
-rgba(0,0,0,.3),
-rgba(4,24,19,.85));
-
-}
 
 .hero{
 
-position:relative;
+    height:100vh;
 
-z-index:5;
+    display:flex;
 
-padding:20px;
+    align-items:center;
 
-animation:fadeUp 1.2s;
+    justify-content:center;
+
+    text-align:center;
+
+    position:relative;
+
+    background:
+
+    linear-gradient(
+    rgba(0,0,0,.65),
+    rgba(4,27,21,.95)
+    ),
+
+    url("images/hero.jpg");
+
+
+    background-size:cover;
+
+    background-position:center;
 
 }
+
+
+
+.hero-content{
+
+    max-width:900px;
+
+    animation:fadeIn 1.5s;
+
+}
+
+
 
 .hero h1{
 
-font-family:"Playfair Display",serif;
+    font-family:'Playfair Display',serif;
 
-font-size:72px;
+    font-size:75px;
 
-margin-bottom:20px;
-
-line-height:1.1;
+    margin-bottom:25px;
 
 }
+
+
 
 .hero p{
 
-font-size:22px;
+    font-size:22px;
 
-color:#ddd;
+    margin-bottom:40px;
 
-margin-bottom:40px;
+    color:#ddd;
 
 }
+
+
 
 .hero a{
 
-text-decoration:none;
+    display:inline-block;
 
-padding:16px 45px;
+    text-decoration:none;
 
-background:#d4af37;
+    background:#d4af37;
 
-color:black;
+    color:black;
 
-font-weight:bold;
+    padding:18px 45px;
 
-border-radius:50px;
+    border-radius:50px;
 
-transition:.35s;
+    font-weight:bold;
 
-box-shadow:0 0 20px rgba(212,175,55,.5);
+    transition:.4s;
 
 }
+
 
 .hero a:hover{
 
-transform:translateY(-5px);
+    transform:translateY(-5px);
 
-box-shadow:0 0 35px gold;
+    box-shadow:0 0 30px #d4af37;
 
 }
 
-/* SECTION */
+
+
+/* SECTIONS */
+
 
 section{
 
-padding:110px 10%;
+    padding:100px 10%;
 
 }
+
+
 
 section h2{
 
-font-family:"Playfair Display",serif;
+    text-align:center;
 
-font-size:46px;
+    font-family:'Playfair Display',serif;
 
-color:#d4af37;
+    font-size:45px;
 
-margin-bottom:25px;
+    color:#d4af37;
 
-text-align:center;
-
-}
-
-.about{
-
-max-width:950px;
-
-margin:auto;
-
-text-align:center;
-
-font-size:18px;
-
-line-height:1.8;
+    margin-bottom:40px;
 
 }
 
-/* SERVICE CARDS */
+
+
+section p{
+
+    text-align:center;
+
+    line-height:1.8;
+
+    font-size:18px;
+
+}
+
+
+
+
+
+/* CARDS */
+
 
 .cards{
 
-display:grid;
+    display:grid;
 
-grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
 
-gap:35px;
-
-margin-top:60px;
+    gap:35px;
 
 }
+
+
 
 .card{
 
-background:rgba(255,255,255,.08);
+    background:rgba(255,255,255,.08);
 
-backdrop-filter:blur(15px);
+    padding:35px;
 
-padding:40px;
+    border-radius:25px;
 
-border-radius:25px;
+    border:1px solid rgba(212,175,55,.3);
 
-border:1px solid rgba(255,215,0,.25);
+    backdrop-filter:blur(15px);
 
-transition:.4s;
+    transition:.4s;
 
 }
+
+
 
 .card:hover{
 
-transform:translateY(-12px);
+    transform:translateY(-12px);
 
-box-shadow:0 15px 35px rgba(212,175,55,.35);
+    box-shadow:0 15px 35px rgba(212,175,55,.35);
 
 }
+
+
 
 .card h3{
 
-font-size:30px;
+    color:#d4af37;
 
-margin-bottom:15px;
+    font-family:'Playfair Display',serif;
 
-color:#d4af37;
+    font-size:30px;
 
-font-family:"Playfair Display",serif;
-
-}
-
-.card p{
-
-line-height:1.7;
-
-margin-bottom:25px;
+    margin-bottom:15px;
 
 }
+
+
 
 .card h4{
 
-font-size:30px;
+    margin-top:20px;
+
+    font-size:25px;
 
 }
 
-/* GALLERY */
 
-.gallery{
 
-display:grid;
+/* BOOKING POLICY */
 
-grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
 
-gap:25px;
+.policy{
 
-margin-top:60px;
+    background:rgba(255,255,255,.08);
 
-}
+    padding:35px;
 
-.gallery div{
+    border-radius:25px;
 
-height:320px;
+    border:1px solid rgba(212,175,55,.3);
 
-border-radius:20px;
-
-background:#0d3a31;
-
-transition:.35s;
-
-border:1px solid rgba(255,215,0,.2);
+    margin-bottom:40px;
 
 }
 
-.gallery div:hover{
 
-transform:scale(1.05);
 
-box-shadow:0 15px 35px rgba(212,175,55,.4);
+.policy h3{
+
+    color:#d4af37;
+
+    font-family:'Playfair Display',serif;
+
+    text-align:center;
+
+    font-size:30px;
+
+    margin-bottom:20px;
 
 }
 
-/* BOOKING */
+
+
+.policy p{
+
+    margin:15px;
+
+}
+
+
+
+/* FORM */
+
 
 form{
 
-max-width:650px;
+    max-width:650px;
 
-margin:auto;
+    margin:auto;
 
-display:flex;
+    display:flex;
 
-flex-direction:column;
+    flex-direction:column;
 
-gap:20px;
+    gap:20px;
 
 }
+
+
 
 input,
-select{
+select,
+textarea{
 
-padding:18px;
+    padding:18px;
 
-border:none;
+    border-radius:15px;
 
-border-radius:15px;
+    border:none;
 
-font-size:16px;
+    font-size:16px;
 
-background:white;
+    font-family:'Poppins',sans-serif;
 
 }
+
+
+
+textarea{
+
+    height:130px;
+
+    resize:none;
+
+}
+
+
 
 form button{
 
-padding:18px;
+    padding:18px;
 
-background:#d4af37;
+    background:#d4af37;
 
-font-size:18px;
+    color:black;
 
-font-weight:bold;
+    border:none;
 
-border:none;
+    border-radius:50px;
 
-cursor:pointer;
+    font-size:18px;
 
-border-radius:50px;
+    font-weight:bold;
 
-transition:.35s;
+    cursor:pointer;
+
+    transition:.3s;
 
 }
+
+
 
 form button:hover{
 
-transform:translateY(-4px);
+    box-shadow:0 0 30px #d4af37;
 
-box-shadow:0 0 25px gold;
-
-}
-
-/* CONTACT */
-
-#contact{
-
-text-align:center;
-
-line-height:2.2;
+    transform:translateY(-4px);
 
 }
+
+
 
 /* FOOTER */
 
+
 footer{
 
-padding:35px;
+    background:#020b08;
 
-text-align:center;
+    text-align:center;
 
-background:black;
-
-color:#aaa;
+    padding:50px;
 
 }
 
+
+
+footer h2{
+
+    color:#d4af37;
+
+    font-family:'Playfair Display',serif;
+
+}
+
+
+
+
+
 /* ANIMATION */
 
-@keyframes fadeUp{
+
+@keyframes fadeIn{
 
 from{
 
 opacity:0;
 
-transform:translateY(70px);
+transform:translateY(40px);
 
 }
+
 
 to{
 
@@ -477,49 +524,79 @@ transform:translateY(0);
 
 }
 
+
+
 /* MOBILE */
+
 
 @media(max-width:900px){
 
-.hero h1{
-
-font-size:48px;
-
-}
 
 nav{
 
-flex-direction:column;
+    flex-direction:column;
 
-gap:20px;
+    gap:20px;
 
 }
+
 
 nav ul{
 
-flex-wrap:wrap;
+    flex-wrap:wrap;
 
-justify-content:center;
-
-gap:20px;
+    justify-content:center;
 
 }
 
-.cards{
 
-grid-template-columns:1fr;
+.hero h1{
+
+    font-size:45px;
+
+}
+
+
+.hero p{
+
+    font-size:18px;
 
 }
 
-.gallery{
-
-grid-template-columns:1fr;
-
-}
 
 section{
 
-padding:80px 7%;
+    padding:80px 6%;
+
+}
+.deposit-button{
+
+display:block;
+
+text-align:center;
+
+margin-top:20px;
+
+padding:18px;
+
+background:white;
+
+color:black;
+
+border-radius:50px;
+
+text-decoration:none;
+
+font-weight:bold;
+
+transition:.3s;
+
+}
+
+
+.deposit-button:hover{
+
+background:#d4af37;
 
 }
 

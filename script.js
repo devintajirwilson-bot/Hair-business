@@ -1,42 +1,151 @@
-const words = {
+// ===============================
+// Klairilia VISION
+// Language + Booking System
+// ===============================
 
-en:{
 
-hero:"Luxury Hair Starts Here",
+let currentLanguage = "en";
 
-subtitle:"Luxury Braids • Locs • Silk Press • Color",
 
-book:"Book Appointment"
-
-},
-
-fr:{
-
-hero:"Le Luxe Commence Ici",
-
-subtitle:"Tresses • Locks • Lissage • Coloration",
-
-book:"Prendre Rendez-vous"
-
-}
-
-};
 
 function changeLanguage(language){
 
-document.querySelector(".hero h1").innerHTML=
-words[language].hero;
+currentLanguage = language;
 
-document.querySelector(".hero p").innerHTML=
-words[language].subtitle;
 
-document.querySelector(".hero a").innerHTML=
-words[language].book;
+
+// Change normal text
+
+document.querySelectorAll("[data-en]").forEach(element=>{
+
+
+if(language === "fr"){
+
+element.innerHTML = element.getAttribute("data-fr");
 
 }
 
-document.querySelectorAll(".language button")[0]
-.onclick=()=>changeLanguage("en");
+else{
 
-document.querySelectorAll(".language button")[1]
-.onclick=()=>changeLanguage("fr");
+element.innerHTML = element.getAttribute("data-en");
+
+}
+
+
+});
+
+
+
+
+// Change placeholders
+
+document.querySelectorAll("[data-placeholder-en]").forEach(element=>{
+
+
+if(language === "fr"){
+
+element.placeholder = element.getAttribute("data-placeholder-fr");
+
+}
+
+else{
+
+element.placeholder = element.getAttribute("data-placeholder-en");
+
+}
+
+
+});
+
+
+
+
+// Change dropdown options
+
+document.querySelectorAll("option[data-en]").forEach(option=>{
+
+
+if(language === "fr"){
+
+option.textContent = option.getAttribute("data-fr");
+
+}
+
+else{
+
+option.textContent = option.getAttribute("data-en");
+
+}
+
+
+});
+
+
+}
+
+
+
+
+// ===============================
+// Booking Form
+// ===============================
+
+
+const bookingForm = document.getElementById("bookingForm");
+
+
+
+if(bookingForm){
+
+
+bookingForm.addEventListener("submit", function(event){
+
+
+event.preventDefault();
+
+
+
+if(currentLanguage === "fr"){
+
+
+alert(
+
+"Merci d'avoir choisi Klairilia VISION!\n\n" +
+
+"Un dépôt NON REMBOURSABLE de 50 $ est requis pour confirmer votre rendez-vous.\n\n" +
+
+"Les frais de déplacement seront calculés selon votre distance en Ontario, Canada."
+
+);
+
+
+}
+
+
+
+else{
+
+
+alert(
+
+"Thank you for choosing Klairilia VISION!\n\n" +
+
+"A $50 NON-REFUNDABLE deposit is required to confirm your appointment.\n\n" +
+
+"Travel fees will be calculated based on your distance within Ontario, Canada."
+
+);
+
+
+}
+
+
+
+bookingForm.reset();
+
+
+
+});
+
+
+}

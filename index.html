@@ -1,232 +1,503 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Klairilia VISION</title>
-
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+<title>Klairilia VISION | Luxury Mobile Hairstylist</title>
 
 <link rel="stylesheet" href="style.css">
 
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
 </head>
 
+
 <body>
+
+
+<!-- NAVIGATION -->
 
 <nav>
 
 <div class="logo">
-
 Klairilia <span>VISION</span>
-
 </div>
+
 
 <ul>
 
-<li><a href="#">Home</a></li>
-<li><a href="#services">Services</a></li>
-<li><a href="#gallery">Gallery</a></li>
-<li><a href="#booking">Book</a></li>
-<li><a href="#contact">Contact</a></li>
+<li><a href="#home" data-en="Home" data-fr="Accueil">Home</a></li>
+
+<li><a href="#about" data-en="About" data-fr="À propos">About</a></li>
+
+<li><a href="#services" data-en="Services" data-fr="Services">Services</a></li>
+
+<li><a href="#booking" data-en="Book" data-fr="Réserver">Book</a></li>
+
+<li><a href="#contact" data-en="Contact" data-fr="Contact">Contact</a></li>
 
 </ul>
 
+
 <div class="language">
 
-<button>🇺🇸</button>
+<button onclick="changeLanguage('en')">
+🇺🇸 English
+</button>
 
-<button>🇫🇷</button>
+
+<button onclick="changeLanguage('fr')">
+🇫🇷 Français
+</button>
 
 </div>
 
+
 </nav>
 
-<header>
 
-<div class="overlay"></div>
 
-<div class="hero">
+<!-- HERO -->
 
-<h1>Luxury Hair Starts Here</h1>
 
-<p>
+<section id="home" class="hero">
 
-Luxury Braids • Locs • Silk Press • Color
+
+<div class="hero-content">
+
+
+<h1 
+data-en="Luxury Hair Starts Here"
+data-fr="Le Luxe Capillaire Commence Ici">
+
+Luxury Hair Starts Here
+
+</h1>
+
+
+<p
+data-en="Luxury Braids • Locs • Silk Press • Hair Styling"
+data-fr="Tresses de Luxe • Locks • Lissage • Coiffure">
+
+Luxury Braids • Locs • Silk Press • Hair Styling
 
 </p>
 
-<a href="#booking">
+
+<a href="#booking"
+data-en="Book Appointment"
+data-fr="Prendre Rendez-vous">
 
 Book Appointment
 
 </a>
 
+
 </div>
 
-</header>
 
-<section class="about">
+</section>
 
-<h2>
+
+
+<!-- ABOUT -->
+
+
+<section id="about">
+
+
+<h2
+data-en="Luxury Beauty Experience"
+data-fr="Une Expérience Beauté de Luxe">
 
 Luxury Beauty Experience
 
 </h2>
 
-<p>
 
-At Klairilia VISION we believe your hair should be a reflection of confidence, elegance, and individuality. Every appointment is tailored to provide a relaxing experience and beautiful results.
+<p
+
+data-en="Klairilia VISION provides premium mobile hairstyling services designed to help you feel confident, beautiful, and empowered. We bring luxury hair care directly to you in Ontario, Canada."
+
+data-fr="Klairilia VISION offre des services de coiffure mobile haut de gamme conçus pour vous faire sentir confiante, belle et valorisée. Nous apportons des soins capillaires de luxe directement chez vous en Ontario, Canada.">
+
+Klairilia VISION provides premium mobile hairstyling services designed to help you feel confident, beautiful, and empowered.
 
 </p>
 
+
 </section>
+
+
+
+
+
+<!-- SERVICES -->
+
 
 <section id="services">
 
-<h2>
 
-Featured Services
+<h2
+data-en="Our Services"
+data-fr="Nos Services">
+
+Our Services
 
 </h2>
 
+
 <div class="cards">
+
 
 <div class="card">
 
-<h3>Braids</h3>
+<h3
+data-en="Luxury Braids"
+data-fr="Tresses de Luxe">
 
-<p>Protective styles for every occasion.</p>
+Luxury Braids
+
+</h3>
+
+
+<p
+data-en="Custom protective styles created for your look."
+data-fr="Des styles protecteurs personnalisés pour votre style.">
+
+Custom protective styles created for your look.
+
+</p>
+
 
 <h4>$120+</h4>
 
 </div>
 
-<div class="card">
 
-<h3>Silk Press</h3>
 
-<p>Healthy shine and smooth finish.</p>
-
-<h4>$70+</h4>
-
-</div>
 
 <div class="card">
 
-<h3>Loc Retwist</h3>
+<h3
+data-en="Loc Retwist"
+data-fr="Retwist de Locks">
 
-<p>Clean maintenance with premium care.</p>
+Loc Retwist
+
+</h3>
+
+
+<p
+data-en="Professional loc maintenance and care."
+data-fr="Entretien professionnel de vos locks.">
+
+Professional loc maintenance and care.
+
+</p>
+
 
 <h4>$85+</h4>
 
 </div>
 
+
+
+
+
+<div class="card">
+
+<h3
+data-en="Silk Press"
+data-fr="Lissage Soyeux">
+
+Silk Press
+
+</h3>
+
+
+<p
+data-en="Smooth, healthy, shiny results."
+data-fr="Des cheveux lisses, brillants et en santé.">
+
+Smooth, healthy, shiny results.
+
+</p>
+
+
+<h4>$70+</h4>
+
 </div>
+
+
+
+</div>
+
 
 </section>
 
-<section id="gallery">
 
-<h2>Gallery</h2>
 
-<div class="gallery">
 
-<div></div>
-<div></div>
-<div></div>
-<div></div>
-<div></div>
-<div></div>
 
-</div>
+<!-- BOOKING -->
 
-</section>
 
 <section id="booking">
 
-<h2>
+
+<h2
+data-en="Book Your Appointment"
+data-fr="Réservez Votre Rendez-vous">
 
 Book Your Appointment
 
 </h2>
 
-<form>
 
-<input type="text" placeholder="Full Name">
 
-<input type="email" placeholder="Email">
+<div class="policy">
 
-<input type="tel" placeholder="Phone Number">
+
+<h3
+data-en="Booking Policy"
+data-fr="Politique de Réservation">
+
+Booking Policy
+
+</h3>
+
+
+<p data-en="💳 A $50 NON-REFUNDABLE deposit is required to secure your appointment."
+
+data-fr="💳 Un dépôt NON REMBOURSABLE de 50 $ est requis pour confirmer votre rendez-vous.">
+
+💳 A $50 NON-REFUNDABLE deposit is required to secure your appointment.
+
+</p>
+
+
+
+<p data-en="🚗 Mobile travel fees are based on your distance within Ontario, Canada."
+
+data-fr="🚗 Les frais de déplacement dépendent de votre distance en Ontario, Canada.">
+
+🚗 Mobile travel fees are based on your distance within Ontario, Canada.
+
+</p>
+
+
+
+<p data-en="📅 Booking calendar opens August 1, 2026."
+
+data-fr="📅 Le calendrier de réservation ouvre le 1er août 2026.">
+
+📅 Booking calendar opens August 1, 2026.
+
+</p>
+
+
+
+</div>
+
+
+
+<form id="bookingForm">
+
+
+<input type="text" 
+placeholder="Full Name"
+data-placeholder-en="Full Name"
+data-placeholder-fr="Nom complet">
+
+
+
+<input type="email"
+placeholder="Email"
+data-placeholder-en="Email"
+data-placeholder-fr="Courriel">
+
+
+
+<input type="tel"
+placeholder="Phone Number"
+data-placeholder-en="Phone Number"
+data-placeholder-fr="Numéro de téléphone">
+
+
 
 <select>
 
-<option>Select Service</option>
+<option data-en="Select Service" data-fr="Choisir un Service">
 
-<option>Braids</option>
+Select Service
 
-<option>Silk Press</option>
+</option>
 
-<option>Loc Retwist</option>
 
-<option>Color</option>
+<option data-en="Braids" data-fr="Tresses">
+
+Braids
+
+</option>
+
+
+<option data-en="Loc Retwist" data-fr="Retwist de Locks">
+
+Loc Retwist
+
+</option>
+
+
+<option data-en="Silk Press" data-fr="Lissage Soyeux">
+
+Silk Press
+
+</option>
+
 
 </select>
 
-<input type="date">
+
+
+<input type="date" min="2026-08-01">
+
 
 <input type="time">
 
-<button>
 
-Book Now
+
+<textarea
+
+placeholder="Special Requests"
+
+data-placeholder-en="Special Requests"
+
+data-placeholder-fr="Demandes spéciales">
+
+</textarea>
+
+
+
+<button type="submit"
+data-en="Continue to Deposit Payment"
+data-fr="Continuer au Paiement du Dépôt">
+
+Continue to Deposit Payment
 
 </button>
 
+
+<a class="deposit-button" href="YOUR_PAYMENT_LINK_HERE">
+
+$50 Deposit / Dépôt de 50 $
+
+</a>
+
+
 </form>
+
 
 </section>
 
+
+
+
+
+<!-- REVIEWS -->
+
+
+<section id="reviews">
+
+
+<h2
+data-en="Client Reviews"
+data-fr="Avis Clients">
+
+Client Reviews
+
+</h2>
+
+
+<div class="cards">
+
+
+<div class="card">
+
+★★★★★
+
+<p>
+Amazing service and beautiful results.
+</p>
+
+</div>
+
+
+<div class="card">
+
+★★★★★
+
+<p>
+Professional and reliable.
+</p>
+
+</div>
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+<!-- CONTACT -->
+
+
 <section id="contact">
 
-<h2>
+
+<h2
+data-en="Contact"
+data-fr="Contact">
 
 Contact
 
 </h2>
 
-<p>
-
-📍 Chicago, Illinois
-
-</p>
 
 <p>
-
-📞 (000)000-0000
-
+📍 Ontario, Canada 🇨🇦
 </p>
+
 
 <p>
-
-Instagram: @KlairiliaVISION
-
+📸 @KlairiliaVISION
 </p>
 
-</section>
 
-<footer>
+<iframe
 
-© 2026 Klairilia VISION
+src="https://www.google.com/maps?q=Ontario,Canada&output=embed"
 
-</footer>
+width="100%"
+
+height="400"
+
+style="border:0;border-radius:20px;"
+
+loading="lazy">
+
+</iframe>
 
 <script src="script.js"></script>
 
+</section>
 </body>
 
 </html>
